@@ -19,7 +19,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::post('resultview/view', 'ResultViewController@view')->name('resultview.view');
+Route::get('resultview/custom', 'ResultViewController@custom')->name('resultview.custom');
+
 Route::post('results/view', 'ResultEntryController@view')->name('results.view');
+Route::get('results/custom', 'ResultEntryController@custom')->name('results.custom');
+
+Route::get('sessonals/custom', 'MidsessonController@custom')->name('sessonals.custom');
+
+Route::get('admins/settings', 'AdminController@settings')->name('admins.settings');
 
 Route::get('/admin', function() {
     return view('admin.dashboard');

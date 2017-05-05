@@ -21,6 +21,17 @@ class ResultEntryController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function custom()
+    {
+        $departments = Department::all();
+        return view('admin.result.custom', ['departments' => $departments]);
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

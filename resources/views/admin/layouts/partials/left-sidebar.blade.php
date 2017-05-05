@@ -30,7 +30,7 @@
             <div class="panel-body">
                 <div class="list-group">
                     <a href="{{ route('results.index') }}" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Regular Result Entry </a>
-                    <a href="" class="list-group-item list-group-item-warning"> <i class="fa fa-users fa-lg"></i> Custom Result Entry </a>
+                    <a href="{{ route('results.custom') }}" class="list-group-item list-group-item-warning"> <i class="fa fa-users fa-lg"></i> Custom Result Entry </a>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
             <div class="panel-body">
                 <div class="list-group">
                     <a href="{{ route('sessonals.index') }}" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Regular </a>
-                    <a href="" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Custom </a>
+                    <a href="{{ route('sessonals.custom') }}" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Custom </a>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
             <div class="panel-body">
                 <div class="list-group">
                     <a href="{{ route('resultview.index') }}" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Regular </a>
-                    <a href="" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Custom </a>
+                    <a href="{{ route('resultview.custom') }}" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Custom </a>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
             <div class="panel-body">
                 <div class="list-group">
                     <a href="{{ route('admins.index') }}" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Admin </a>
-                    <a href="" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Settings </a>
+                    <a href="{{ route('admins.settings') }}" class="list-group-item list-group-item-success"> <i class="fa fa-users fa-lg"></i> Settings </a>
                 </div>
             </div>
         </div>
